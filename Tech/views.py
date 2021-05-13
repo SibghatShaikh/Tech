@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from Tech.models import *
 
 # Create your views here.
 
@@ -7,36 +9,47 @@ def home(request):
 	return render(request, 'Tech/dashboard.html')
 
 def processor(request):
-	return render(request, 'Tech/processor.html')
+	processor= Processor.objects.all()
+	return render(request, 'Tech/processor.html',{'cpu':processor})
 
 def accessories(request):
-	return render(request, 'Tech/accessories.html')
+	accessories=Accessories.objects.all()
+	return render(request, 'Tech/accessories.html',{'accessories':accessories})
 
 def gpu(request):
-	return render(request, 'Tech/gpu.html')
+	gpu = Gpu.objects.all()
+	return render(request, 'Tech/gpu.html',{'gpu':gpu})
 
 
 def monitor(request):
-	return render(request, 'Tech/monitor.html')
+	monitor= Monitor.objects.all()
+	return render(request, 'Tech/monitor.html',{'monitor':monitor})
 
 
 def motherboard(request):
-	return render(request, 'Tech/motherboard.html')
+	motherboard=Motherboard.objects.all()
+	return render(request, 'Tech/motherboard.html',{'mobo':motherboard})
 
 def psu(request):
-	return render(request, 'Tech/psu.html')
+	psu=Psu.objects.all()
+	return render(request, 'Tech/psu.html',{'psu':psu})
 
 
 def ram(request):
-	return render(request, 'Tech/ram.html')
+	ram=Ram.objects.all()
+	return render(request, 'Tech/ram.html',{'ram':ram})
 
 
 def recommendedshops(request):
-	return render(request, 'Tech/recommendedshops.html')
+	recommendedshops=Recommendedshops.objects.all()
+	return render(request, 'Tech/recommendedshops.html',{'shops':recommendedshops})
 
 def storage(request):
-	return render(request, 'Tech/storage.html')
+	storage=Hddandssd.objects.all()
+	return render(request, 'Tech/storage.html',{'storage':storage})
 
+def reviewlink(request):
+	return HttpResponseRedirect('/url-name-here/')
 
 
 
