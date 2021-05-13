@@ -1,16 +1,34 @@
+{%load static%}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <a href="http://127.0.0.1:8000/"> <img src="{%static 'images/logo1.png'%}"/></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+ <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="http://127.0.0.1:8000/processor/">Processors</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/gpu/">Graphics Card</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/ram/">RAM</a>
+        </li>
+        <a class="nav-link" href="http://127.0.0.1:8000/storage/">HDD and SSD</a>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/monitor/">Monitors</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/psu/">Power Supply</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/motherboard/">Motherboard</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/accessories/">Accessories</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Products</a>
-      </li>
+   
     </ul>
   </div>
 </nav>
