@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'Tech_Hub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Techhub',
+        'NAME': 'techhub',
         'USER':'root',
-        'PASSWORD':'',
+        'PASSWORD': '',
         'HOST':'localhost',
         'PORT':'3306',
         'OPTIONS':{
