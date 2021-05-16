@@ -15,6 +15,7 @@ urlpatterns = [
     path('storage/', views.storage),
     path('admin/', admin.site.urls),
     path('i.reviewlink/',views.reviewlink),
-
-    
+    path("gpucompare/", views.gpucompare),
+    path("cpucompare/", views.cpucompare),
+   
 ]
