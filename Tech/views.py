@@ -8,13 +8,16 @@ from Tech.models import *
 def home(request):
 	return render(request, 'Tech/dashboard.html')
 
+
 def processor(request):
 	processor= Processor.objects.all()
 	return render(request, 'Tech/processor.html',{'cpu':processor})
 
+
 def accessories(request):
 	accessories=Accessories.objects.all()
 	return render(request, 'Tech/accessories.html',{'accessories':accessories})
+
 
 def gpu(request):
 	gpu = Gpu.objects.all()
@@ -44,13 +47,20 @@ def recommendedshops(request):
 	recommendedshops=Recommendedshops.objects.all()
 	return render(request, 'Tech/recommendedshops.html',{'shops':recommendedshops})
 
+
 def storage(request):
 	storage=Hddandssd.objects.all()
 	return render(request, 'Tech/storage.html',{'storage':storage})
+
 
 def reviewlink(request):
 	return HttpResponseRedirect('/url-name-here/')
 
 
+def gpucompare(request):
+    return render(request, "Tech/gpucompare.html")
 
+
+def cpucompare(request):
+    return render(request, "Tech/cpucompare.html")
 
