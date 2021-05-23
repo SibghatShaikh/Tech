@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 23, 2021 at 01:09 PM
+-- Generation Time: May 23, 2021 at 01:17 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -45,7 +45,17 @@ INSERT INTO `accessories` (`AccId`, `Model`, `Price`, `ShopName`, `ReviewLink`) 
 (9003, 'Razer Huntsman Elite Opto-Mechanical Keyboard', 16300, 'StarTech', 'https://www.youtube.com/watch?v=sVZXxbdLn7Q'),
 (9004, 'WALTON WMS025WN WIRED MOUSE', 175, 'TechLand', 'null'),
 (9005, 'RAZER VIPER MINI ULTRA-LIGHTWEIGHT GAMING MOUSE', 2299, 'Skyland', 'https://www.youtube.com/watch?v=esQhZd31Jt4'),
-(9006, 'Razer Viper Ultimate RGB Wireless Gaming Mouse', 10300, 'StarTech', 'https://www.rtings.com/mouse/reviews/razer/viper-ultimate');
+(9006, 'Razer Viper Ultimate RGB Wireless Gaming Mouse', 10300, 'StarTech', 'https://www.rtings.com/mouse/reviews/razer/viper-ultimate'),
+(9007, 'A4TECH BLOODY P91S RGB GAMING MOUSE', 1800, 'StarTech', 'https://www.youtube.com/watch?v=vV0l_Wljj1Q'),
+(9008, 'A4TECH BLOODY J95S 2 FIRE HIGH PRECISE RGB GAMING MOUSE', 2100, 'TechLand', 'https://www.youtube.com/watch?v=skk9LbJE7YE'),
+(9009, 'GIGABYTE AORUS M2 6200 DPI OPTICAL RGB GAMING MOUSE', 1200, 'TechLand', 'https://www.youtube.com/watch?v=ZfERTC7Z5eY'),
+(9010, 'CORSAIR HARPOON RGB WIRELESS GAMING MOUSE', 4800, 'StarTech', ' https://www.youtube.com/watch?v=1wQWwvbpEUY'),
+(9011, 'RAPOO V500 PRO MECHANICAL GAMING KEYBOARD (YELLOW BLUE)', 3300, 'StartTech', 'https://www.youtube.com/watch?v=B9mFDwSt7vM'),
+(9012, 'ASUS TUF GAMING K1 RGB KEYBOARD', 3700, 'TechLand', ' https://www.youtube.com/watch?v=ngCWb0jxUIE'),
+(9013, 'GIGABYTE AORUS K1 MECHANICAL GAMING KEYBOARD (CHERRY MX RED)', 7000, ' TechLand', ' https://www.youtube.com/watch?v=bhLN58vPpGw'),
+(9014, ' HAVIT H2028U USB 7.1 GAMING HEADSET (BLACK) ', 2200, 'StarTech', 'https://www.youtube.com/watch?v=fsEF-gR3tTk'),
+(9015, 'FANTECH HQ52S TONE PLUS RGB GAMING HEADPHONE', 1350, 'TechHub', ' https://www.youtube.com/watch?v=EQmMbB-OI38'),
+(9016, 'CORSAIR VOID RGB ELITE 7.1 SURROUND SOUND USB PREMIUM GAMING HEADSET (WHITE)', 7500, 'StarTech', 'https://www.youtube.com/watch?v=PxFUjLXo6xA');
 
 -- --------------------------------------------------------
 
@@ -863,3 +873,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
