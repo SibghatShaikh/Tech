@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 23, 2021 at 01:21 PM
+-- Generation Time: May 23, 2021 at 01:45 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -456,7 +456,21 @@ INSERT INTO `monitor` (`MonitorId`, `Model`, `Price`, `ShopName`, `ReviewLink`) 
 (10003, 'HP X24IH 23.8 INCH 144HZ LED FHD FREESYNC IPS GAMING MONITOR', 22500, 'TechLand', 'https://www.rtings.com/monitor/reviews/hp/x24ih'),
 (10004, 'XIAOMI XMMNT27HQ 27-INCH IPS QHD 165HZ GAMING MONITOR', 36300, 'TechLand', 'https://www.youtube.com/watch?v=PCebWiIg0QI'),
 (10005, 'Xiaomi Mi 34\" 144Hz FreeSync Curved Monitor', 42000, 'StarTech', 'https://www.youtube.com/watch?v=1hMAw8xCd0Y'),
-(10006, 'LG 27GN950-B 27\" 4K UHD Nano IPS Ultragear 144Hz G-SYNC Gaming Monitor', 107500, 'StarTech', 'https://www.youtube.com/watch?v=55pUgm6V4_Q');
+(10006, 'LG 27GN950-B 27\" 4K UHD Nano IPS Ultragear 144Hz G-SYNC Gaming Monitor', 107500, 'StarTech', 'https://www.youtube.com/watch?v=55pUgm6V4_Q'),
+(10007, 'BENQ GL2070 19.5 INCH LED EYE-CARE MONITOR', 10500, 'TechLand', ' https://www.youtube.com/watch?v=xKRJaR-WiOE'),
+(10008, 'BENQ GW2480 23.8 INCH EYE-CARE IPS MONITOR ', 15500, ' TechLand ', 'https://www.amazon.com/product-reviews/B072XCZSSW) (https://www.youtube.com/watch?v=_vUge8nW8MM'),
+(10009, ' BENQ EW2480 24-INCH HDR FREESYNC IPS MONITOR', 20500, 'SkyLand', ' https://www.youtube.com/watch?v=SnL2DrswQLE'),
+(10010, 'SAMSUNG LS22R350 22 INCH 75HZ FHD LED GAMING MONITOR', 10800, 'SkyLand', 'https://www.youtube.com/watch?v=Q2fncQuuKvY&t=476s'),
+(10011, 'SAMSUNG F24T350FHW 24 INCH IPS LED MONITOR', 14500, 'StarTech', ' https://www.youtube.com/watch?v=iZjCOr2AES4'),
+(10012, 'SAMSUNG S24F350 24 INCH FULL HD BLACK LED MONITOR ', 15000, 'StarTech', 'https://www.youtube.com/watch?v=UiA3-mZ98b8'),
+(10013, 'MSI OPTIX G24VC 23.6\" FULL HD CURVED GAMING MONITOR', 15999, 'StarTech', ' https://www.youtube.com/watch?v=oNIsPyTWBMo'),
+(10014, 'MSI OPTIX G241VC 24 INCH FULL HD CURVED GAMING MONITOR (WITH HDMI CABLE)', 18000, 'StarTech', ' https://www.youtube.com/watch?v=WvfSbOCWFd0'),
+(10015, 'ASUS VZ229HE 21.5 INCH ULTRA-SLIM FRAMELESS EYE CARE FHD IPS MONITOR', 11400, 'StarTech', ' https://www.youtube.com/watch?v=ISSqKHsi0aA'),
+(10016, 'ASUS TUF GAMING VG249Q1R 23.8 INCH 165HZ LED IPS GAMING MONITOR', 25500, 'TechLand', 'https://www.youtube.com/watch?v=wXka-Av9wxk'),
+(10017, ' DELL S2421HN 24 INCH FHD LCD IPS MONITOR', 15500, 'TechLand', ' https://www.youtube.com/watch?v=26uXBJeZ4PI'),
+(10018, 'GIGABYTE G27FC 27 INCH CURVED 165 HZ ADAPTIVE-SYNC VA GAMING MONITOR', 26800, 'TechLand', 'https://www.youtube.com/watch?v=0czX41CKsdQ'),
+(10019, ' LG 22MN430M 22-INCH FULL HD IPS MONITOR', 9990, 'TechLand', ' https://www.youtube.com/watch?v=0b0ZnlA4r-M'),
+(10020, 'VIEWSONIC VX2276-SH 22 INCH IPS MONITOR', 10800, 'TechLand', 'https://www.youtube.com/watch?v=jMLTC-003CE');
 
 -- --------------------------------------------------------
 
@@ -881,5 +895,6 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 
 
