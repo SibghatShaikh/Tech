@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 08, 2021 at 10:02 PM
+-- Generation Time: May 23, 2021 at 01:09 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `accessories` (
   `AccId` int(8) NOT NULL,
-  `Model` varchar(50) NOT NULL,
+  `Model` varchar(100) NOT NULL,
   `Price` int(10) NOT NULL,
   `ShopName` varchar(20) DEFAULT NULL,
   `ReviewLink` varchar(2083) DEFAULT NULL
@@ -550,7 +550,7 @@ INSERT INTO `psu` (`PsuId`, `Model`, `Price`, `ShopName`, `ReviewLink`) VALUES
 
 CREATE TABLE `ram` (
   `RamId` int(8) NOT NULL,
-  `Model` varchar(50) NOT NULL,
+  `Model` varchar(100) NOT NULL,
   `Price` int(10) NOT NULL,
   `ShopName` varchar(20) DEFAULT NULL,
   `ReviewLink` varchar(2083) DEFAULT NULL
@@ -569,7 +569,14 @@ INSERT INTO `ram` (`RamId`, `Model`, `Price`, `ShopName`, `ReviewLink`) VALUES
 (8006, 'G.SKILL TRIDENT Z 4GB DDR4 3200MHZ', 4000, 'TechLand', NULL),
 (8007, 'Team Elite Plus 16GB DDR4 2400MHz', 5500, 'StarTech', NULL),
 (8008, 'Transcend 16GB DDR4 2666Mhz', 8000, 'StarTech', NULL),
-(8009, 'TEAM T-FORCE DARK 16GB DDR4 3200MHZ', 8000, 'TechLand', NULL);
+(8009, 'TEAM T-FORCE DARK 16GB DDR4 3200MHZ', 8000, 'TechLand', NULL),
+(8010, 'G.SKILL TRIDENT Z ROYAL RGB 8GB DDR4 4266MHZ DESKTOP RAM', 9800, 'TechLand', NULL),
+(8011, 'SILICON POWER XPOWER TURBINE 8GB 3200MHZ DDR4 UDIMM GAMING RAM', 4800, 'TechLand', NULL),
+(8012, 'TWINMOS 8GB 3200MHZ DDR4 DESKTOP RAM', 4500, 'TechLand', NULL),
+(8013, 'CORSAIR DOMINATOR PLATINUM RGB 8 DDR4 3600MHZ DESKTOP RAM', 7800, 'TechLand', NULL),
+(8014, 'CORSAIR VENGEANCE RGB PRO 16GB DDR4 3600MHZ DESKTOP RAM', 9200, 'TechLand', NULL),
+(8015, 'PATRIOT VIPER STEEL 16GB 3200MHZ DDR4 GAMING DESKTOP RAM', 8500, 'TechLand', NULL),
+(8016, 'PNY XLR8 GAMING EPIC-X RGB 8GB DDR4 3200MHZ DESKTOP RAM', 5100, 'TechLand', NULL);
 
 -- --------------------------------------------------------
 
