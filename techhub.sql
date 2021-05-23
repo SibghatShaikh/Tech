@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 23, 2021 at 01:17 PM
+-- Generation Time: May 23, 2021 at 01:21 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -550,7 +550,15 @@ INSERT INTO `psu` (`PsuId`, `Model`, `Price`, `ShopName`, `ReviewLink`) VALUES
 (5005, 'Montech Beta 650w 80 plus Bronze psu', 5100, 'TechLand', 'https://www.amazon.com/Montech-Certified-Japanese-Capacitors-Continuous/product-reviews/B084Q9NH11?reviewerType=all_reviews'),
 (5006, 'ANTEC NEOECO NE700G ZEN 700W 80PLUS Gold', 7700, 'TechLand', 'https://www.thefpsreview.com/2020/11/11/antec-neo-eco-gold-zen-700w-power-supply-review/'),
 (5007, 'Cooler Master MWE 750W V2 Non-Modular 80 Plus Bronze Certified Power Supply', 7700, 'StarTech', 'https://www.eteknix.com/cooler-master-mwe-gold-750-v2-power-supply-review/'),
-(5008, 'DEEPCOOL DQ850-M-V2L 850W 80 PLUS GOLD FULL MODULAR POWER SUPPLY', 9500, 'TechLand', 'https://www.tomshardware.com/reviews/deepcool-gamerstorm-dq-m-v2l-850w-power-supply-review');
+(5008, 'DEEPCOOL DQ850-M-V2L 850W 80 PLUS GOLD FULL MODULAR POWER SUPPLY', 9500, 'TechLand', 'https://www.tomshardware.com/reviews/deepcool-gamerstorm-dq-m-v2l-850w-power-supply-review'),
+(5009, ' CORSAIR CX750M 750W 80 PLUS BRONZE CERTIFIED SEMI MODULAR ATX POWER SUPPLY', 9000, 'TechLand', 'https://www.youtube.com/watch?v=DlTLCyM62qU'),
+(5010, 'CORSAIR CX550F RGB 550 WATT 80 PLUS BRONZE CERTIFIED FULLY MODULAR RGB POWER SUPPLY', 7800, 'TechLand', ' https://www.youtube.com/watch?v=VxXIwooAoG4'),
+(5011, ' CORSAIR RM SERIES RM850 850 WATT 80 PLUS GOLD CERTIFIED FULLY MODULAR POWER SUPPLY', 1300, 'SkyLand', 'https://www.youtube.com/watch?v=8u_izntn4WA'),
+(5012, 'CORSAIR CV SERIES CV650 650 WATT 80 PLUS BRONZE CERTIFIED POWER SUPPLY', 5700, 'SkyLand', 'https://www.youtube.com/watch?v=n3inT6W-4Ps'),
+(5013, 'THERMALTAKE SMART BM2 550W 80 PLUS BRONZE SEMI-MODULAR POWER SUPPLY', 6200, 'SkyLand', 'https://www.youtube.com/watch?v=N3nOQEHKlPU'),
+(5014, 'GAMDIAS KRATOS P1-750G 750W ADDRESSABLE RGB GOLD CERTIFIED POWER SUPPLY', 8000, 'TechLand', 'https://www.youtube.com/watch?v=_tJZsUlz8eA'),
+(5015, 'GIGABYTE P750GM 750 WATT 80+ GOLD CERTIFIED POWER SUPPLY ', 8500, 'TechLand', 'https://www.youtube.com/watch?v=hS0Mjw3BW94'),
+(5016, ' GIGABYTE AORUS P850W 80+ GOLD CERTIFIED MODULAR POWER SUPPLY ', 12500, 'TechLand', 'https://www.youtube.com/watch?v=IkoH5xRepH4');
 
 -- --------------------------------------------------------
 
@@ -873,4 +881,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 
