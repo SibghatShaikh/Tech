@@ -2,8 +2,8 @@
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: May 23, 2021 at 01:45 PM
+-- Host: 127.0.0.1
+-- Generation Time: May 24, 2021 at 07:54 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -380,29 +380,30 @@ CREATE TABLE `gpu` (
   `Model` varchar(100) NOT NULL,
   `Price` int(10) NOT NULL,
   `ShopName` varchar(20) DEFAULT NULL,
-  `ReviewLink` varchar(2083) DEFAULT NULL
+  `ReviewLink` varchar(2083) DEFAULT NULL,
+  `BenchmarkValue` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `gpu`
 --
 
-INSERT INTO `gpu` (`GpuId`, `Model`, `Price`, `ShopName`, `ReviewLink`) VALUES
-(3001, 'COLORFUL GEFORCE GT710-2GD3-V 2GB GRAPHICS CARD', 3900, 'TechLand', 'https://www.youtube.com/watch?v=r3-_nYkYWFY'),
-(3002, 'BIOSTAR RADEON RX550 2GB GDDR5 GRAPHICS CARD', 7000, 'TechLand', 'https://www.amazon.com/product-reviews/B0887VC9HK?reviewerType=all_reviews'),
-(3003, 'ZOTAC GeForce GT 1030 Low Profile 2GB GDDR5 Graphics Card', 7300, 'StarTech', 'https://www.notebookcheck.net/Zotac-GeForce-GT-1030-Review.229134.0.html'),
-(3004, 'XFX RADEON RX 560 4GB GRAPHICS CARD', 10200, 'TechLand', 'https://versus.com/en/xfx-radeon-rx-560-single-fan-oc-4gb'),
-(3005, 'COLORFUL IGAME GEFORCE GTX 1050TI VULCAN U 4GB GRAPHICS CARD', 14300, 'TechLand', 'https://tech4gamers.com/colorful-igame-geforce-gtx-1050ti-vulkan-u-4g-ec/'),
-(3006, 'ZOTAC GAMING GEFORCE GTX 1650 OC 4GB GRAPHICS CARD', 13800, 'TechLand', 'https://www.guru3d.com/articles-pages/zotac-geforce-gtx-1650-gaming-4gb-review,1.html'),
-(3007, 'Sapphire Pulse Radeon RX 570 4GB GDDR5 HDMI DP Graphics card', 12700, 'StarTech', 'https://hexus.net/tech/reviews/graphics/108460-sapphire-radeon-rx-570-pulse-oc-4gb/'),
-(3008, 'MSI GeForce GTX 1650 Super Ventus XS OC 4GB Graphics Card', 16500, 'StarTech', 'https://versus.com/en/msi-geforce-gtx-1650-super-ventus-xs-oc'),
-(3009, 'ZOTAC GAMING GEFORCE GTX 1660 SUPER TWIN FAN 6GB GRAPHICS CARD', 44000, 'TechLand', 'https://www.pcmag.com/reviews/zotac-geforce-gtx-1660-super-twin-fan'),
-(3010, 'Colorful iGame GeForce 1660 TI ULTRA 6GB-V Graphics Card', 27500, 'StarTech', 'https://versus.com/en/colorful-igame-geforce-gtx-1660-ti-ultra'),
-(3011, 'ZOTAC GAMING GEFORCE RTX 2060 AMP 6GB GRAPHICS CARD', 50500, 'TechLand', 'https://www.pcmag.com/reviews/zotac-geforce-rtx-2060-amp'),
-(3012, 'GALAX GEFORCE RTX 3060 1-CLICK OC 12GB GDDR6 GRAPHICS CARD', 65000, 'StarTech', 'https://www.youtube.com/watch?v=M4PVeM50wL8'),
-(3013, 'GIGABYTE RADEON RX 5600 XT GAMING OC 6GB GRAPHICS CARD', 52000, 'TechLand', 'https://www.tomshardware.com/reviews/gigabyte-rx-5600-xt-gaming-oc-6g'),
-(3014, 'Sapphire PULSE AMD Radeon RX 6700 XT 12GB RDNA GDDR6 Graphics Card', 82900, 'StarTech', 'https://www.pcgamer.com/sapphire-nitro-plus-radeon-rx-6700-xt-review-benchmarks/'),
-(3015, 'Gigabyte GeForce RTX 3070 Gaming OC 8GB Graphics Card', 100000, 'TechLand', 'https://www.techpowerup.com/review/gigabyte-geforce-rtx-3070-gaming-oc/');
+INSERT INTO `gpu` (`GpuId`, `Model`, `Price`, `ShopName`, `ReviewLink`, `BenchmarkValue`) VALUES
+(3001, 'COLORFUL GEFORCE GT710-2GD3-V 2GB GRAPHICS CARD', 3900, 'TechLand', 'https://www.youtube.com/watch?v=r3-_nYkYWFY', 3.4),
+(3002, 'BIOSTAR RADEON RX550 2GB GDDR5 GRAPHICS CARD', 7000, 'TechLand', 'https://www.amazon.com/product-reviews/B0887VC9HK?reviewerType=all_reviews', 12.9),
+(3003, 'ZOTAC GeForce GT 1030 Low Profile 2GB GDDR5 Graphics Card', 7300, 'StarTech', 'https://www.notebookcheck.net/Zotac-GeForce-GT-1030-Review.229134.0.html', 14.7),
+(3004, 'XFX RADEON RX 560 4GB GRAPHICS CARD', 10200, 'TechLand', 'https://versus.com/en/xfx-radeon-rx-560-single-fan-oc-4gb', 22.7),
+(3005, 'COLORFUL IGAME GEFORCE GTX 1050TI VULCAN U 4GB GRAPHICS CARD', 14300, 'TechLand', 'https://tech4gamers.com/colorful-igame-geforce-gtx-1050ti-vulkan-u-4g-ec/', 31),
+(3006, 'ZOTAC GAMING GEFORCE GTX 1650 OC 4GB GRAPHICS CARD', 13800, 'TechLand', 'https://www.guru3d.com/articles-pages/zotac-geforce-gtx-1650-gaming-4gb-review,1.html', 43.2),
+(3007, 'Sapphire Pulse Radeon RX 570 4GB GDDR5 HDMI DP Graphics card', 12700, 'StarTech', 'https://hexus.net/tech/reviews/graphics/108460-sapphire-radeon-rx-570-pulse-oc-4gb/', 46.5),
+(3008, 'MSI GeForce GTX 1650 Super Ventus XS OC 4GB Graphics Card', 16500, 'StarTech', 'https://versus.com/en/msi-geforce-gtx-1650-super-ventus-xs-oc', 60.1),
+(3009, 'ZOTAC GAMING GEFORCE GTX 1660 SUPER TWIN FAN 6GB GRAPHICS CARD', 44000, 'TechLand', 'https://www.pcmag.com/reviews/zotac-geforce-gtx-1660-super-twin-fan', 70.7),
+(3010, 'Colorful iGame GeForce 1660 TI ULTRA 6GB-V Graphics Card', 27500, 'StarTech', 'https://versus.com/en/colorful-igame-geforce-gtx-1660-ti-ultra', 76.2),
+(3011, 'ZOTAC GAMING GEFORCE RTX 2060 AMP 6GB GRAPHICS CARD', 50500, 'TechLand', 'https://www.pcmag.com/reviews/zotac-geforce-rtx-2060-amp', 89),
+(3012, 'GALAX GEFORCE RTX 3060 1-CLICK OC 12GB GDDR6 GRAPHICS CARD', 65000, 'StarTech', 'https://www.youtube.com/watch?v=M4PVeM50wL8', 131),
+(3013, 'GIGABYTE RADEON RX 5600 XT GAMING OC 6GB GRAPHICS CARD', 52000, 'TechLand', 'https://www.tomshardware.com/reviews/gigabyte-rx-5600-xt-gaming-oc-6g', 87),
+(3014, 'Sapphire PULSE AMD Radeon RX 6700 XT 12GB RDNA GDDR6 Graphics Card', 82900, 'StarTech', 'https://www.pcgamer.com/sapphire-nitro-plus-radeon-rx-6700-xt-review-benchmarks/', 118),
+(3015, 'Gigabyte GeForce RTX 3070 Gaming OC 8GB Graphics Card', 100000, 'TechLand', 'https://www.techpowerup.com/review/gigabyte-geforce-rtx-3070-gaming-oc/', 153);
 
 -- --------------------------------------------------------
 
@@ -513,30 +514,31 @@ CREATE TABLE `processor` (
   `Model` varchar(100) NOT NULL,
   `Price` int(10) NOT NULL,
   `ShopName` varchar(30) DEFAULT NULL,
-  `ReviewLink` varchar(2083) DEFAULT NULL
+  `ReviewLink` varchar(2083) DEFAULT NULL,
+  `BenchmarkValue` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `processor`
 --
 
-INSERT INTO `processor` (`ProcessorId`, `Model`, `Price`, `ShopName`, `ReviewLink`) VALUES
-(4001, 'Intel Pentium Gold G6400 10th gen Coffee Lake Processor', 5800, 'TechLand', 'https://www.pcmag.com/reviews/intel-pentium-gold-g6400'),
-(4002, 'INTEL CORE I3 9100F 9TH GEN PROCESSOR', 7300, 'TechLand', 'https://www.legitreviews.com/intel-core-i3-9100-4-core-processor-review_213639'),
-(4003, 'INTEL CORE I3-10100 10TH GEN PROCESSOR', 12500, 'TechLand', 'https://www.pcmag.com/reviews/intel-core-i3-10100'),
-(4004, 'INTEL CORE I5 9400F 9TH GEN PROCESSOR', 12500, 'StarTech', 'https://www.tomshardware.com/reviews/intel-core-i5-9400f-cpu-integrated-graphics,6107.html'),
-(4005, 'Intel 10th Gen Core i5-10400F Processor', 13900, 'StarTech', 'https://www.techpowerup.com/review/intel-core-i5-10400f/'),
-(4006, 'INTEL CORE I7-9700K 9TH GEN PROCESSOR', 30400, 'Skyland', 'https://www.pcmag.com/reviews/intel-core-i7-9700k'),
-(4007, 'INTEL CORE I7-10700K OCTA CORE 10TH GENERATION PROCESSOR', 31800, 'TechLand', 'https://www.windowscentral.com/intel-core-i7-10700k-review'),
-(4008, 'INTEL CORE I9-9900K 9TH GENERATION PROCESSOR', 34000, 'TechLand', 'https://www.techradar.com/reviews/intel-core-i9-9900k-review'),
-(4009, 'INTEL CORE I9-10900K 10TH GEN 10 CORE PROCESSOR', 45000, 'TechLand', 'https://www.tomshardware.com/reviews/intel-core-i9-10900k-cpu-review'),
-(4010, 'AMD Ryzen 3 3100 Desktop Processor With Wraith Stealth Cooling Solution', 11500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-3-3100'),
-(4011, 'AMD RYZEN 5 3500X 6 CORE 6 THREAD PROCESSOR', 13600, 'Skyland', 'https://www.techspot.com/review/1966-amd-ryzen-5-3500x/'),
-(4012, 'AMD RYZEN 5 3600 6 CORE 6 THREAD PROCESSOR', 16500, 'TechLand', 'https://www.tomshardware.com/reviews/amd-ryzen-5-3600-review,6287.html'),
-(4013, 'AMD RYZEN 5 5600X PROCESSOR 3.7 GHZ UP TO 4.6GHZ SIX-CORE AM4 PROCESSOR', 32000, 'TechLand', 'https://www.tomshardware.com/reviews/amd-ryzen-5-5600x-zen-3-review'),
-(4014, 'AMD Ryzen 7 3700X Processor', 27500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-7-3700x'),
-(4015, 'AMD RYZEN 7 5800X PROCESSOR', 43500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-7-5800x'),
-(4016, 'AMD RYZEN 9 5900X PROCESSOR', 57500, 'Skyland', 'https://www.techradar.com/reviews/amd-ryzen-9-5900x');
+INSERT INTO `processor` (`ProcessorId`, `Model`, `Price`, `ShopName`, `ReviewLink`, `BenchmarkValue`) VALUES
+(4001, 'Intel Pentium Gold G6400 10th gen Coffee Lake Processor', 5800, 'TechLand', 'https://www.pcmag.com/reviews/intel-pentium-gold-g6400', 71),
+(4002, 'INTEL CORE I3 9100F 9TH GEN PROCESSOR', 7300, 'TechLand', 'https://www.legitreviews.com/intel-core-i3-9100-4-core-processor-review_213639', 79.8),
+(4003, 'INTEL CORE I3-10100 10TH GEN PROCESSOR', 12500, 'TechLand', 'https://www.pcmag.com/reviews/intel-core-i3-10100', 84),
+(4004, 'INTEL CORE I5 9400F 9TH GEN PROCESSOR', 12500, 'StarTech', 'https://www.tomshardware.com/reviews/intel-core-i5-9400f-cpu-integrated-graphics,6107.html', 85.3),
+(4005, 'Intel 10th Gen Core i5-10400F Processor', 13900, 'StarTech', 'https://www.techpowerup.com/review/intel-core-i5-10400f/', 87.8),
+(4006, 'INTEL CORE I7-9700K 9TH GEN PROCESSOR', 30400, 'Skyland', 'https://www.pcmag.com/reviews/intel-core-i7-9700k', 97.5),
+(4007, 'INTEL CORE I7-10700K OCTA CORE 10TH GENERATION PROCESSOR', 31800, 'TechLand', 'https://www.windowscentral.com/intel-core-i7-10700k-review', 98.4),
+(4008, 'INTEL CORE I9-9900K 9TH GENERATION PROCESSOR', 34000, 'TechLand', 'https://www.techradar.com/reviews/intel-core-i9-9900k-review', 97.5),
+(4009, 'INTEL CORE I9-10900K 10TH GEN 10 CORE PROCESSOR', 45000, 'TechLand', 'https://www.tomshardware.com/reviews/intel-core-i9-10900k-cpu-review', 102),
+(4010, 'AMD Ryzen 3 3100 Desktop Processor With Wraith Stealth Cooling Solution', 11500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-3-3100', 76.5),
+(4011, 'AMD RYZEN 5 3500X 6 CORE 6 THREAD PROCESSOR', 13600, 'Skyland', 'https://www.techspot.com/review/1966-amd-ryzen-5-3500x/', 84.6),
+(4012, 'AMD RYZEN 5 3600 6 CORE 6 THREAD PROCESSOR', 16500, 'TechLand', 'https://www.tomshardware.com/reviews/amd-ryzen-5-3600-review,6287.html', 83.4),
+(4013, 'AMD RYZEN 5 5600X PROCESSOR 3.7 GHZ UP TO 4.6GHZ SIX-CORE AM4 PROCESSOR', 32000, 'TechLand', 'https://www.tomshardware.com/reviews/amd-ryzen-5-5600x-zen-3-review', 96.5),
+(4014, 'AMD Ryzen 7 3700X Processor', 27500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-7-3700x', 87),
+(4015, 'AMD RYZEN 7 5800X PROCESSOR', 43500, 'StarTech', 'https://www.techradar.com/reviews/amd-ryzen-7-5800x', 99.1),
+(4016, 'AMD RYZEN 9 5900X PROCESSOR', 57500, 'Skyland', 'https://www.techradar.com/reviews/amd-ryzen-9-5900x', 101);
 
 -- --------------------------------------------------------
 
@@ -895,6 +897,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-
