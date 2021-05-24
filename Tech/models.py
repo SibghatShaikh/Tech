@@ -182,6 +182,7 @@ class Gpu(models.Model):
     price = models.IntegerField(db_column='Price')  # Field name made lowercase.
     shopname = models.CharField(db_column='ShopName', max_length=20, blank=True, null=True)  # Field name made lowercase.
     reviewlink = models.CharField(db_column='ReviewLink', max_length=2083, blank=True, null=True)  # Field name made lowercase.
+    benchmarkvalue = models.FloatField(db_column='BenchmarkValue')  # Field name made lowercase.
 
     class Meta:
         managed = False
@@ -230,6 +231,7 @@ class Processor(models.Model):
     price = models.IntegerField(db_column='Price')  # Field name made lowercase.
     shopname = models.CharField(db_column='ShopName', max_length=30, blank=True, null=True)  # Field name made lowercase.
     reviewlink = models.CharField(db_column='ReviewLink', max_length=2083, blank=True, null=True)  # Field name made lowercase.
+    benchmarkvalue = models.FloatField(db_column='BenchmarkValue')  # Field name made lowercase.
 
     class Meta:
         managed = False
