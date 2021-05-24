@@ -5,6 +5,38 @@
 	<title>TechHub</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel= "stylesheet" type = "text/css" href="{% static '/css/main.css'%}">
+
+	<script type= "text/javascript">
+		function selectdata()
+		{
+			displayprice=document.querySelector("#dropdown")
+			ans=displayprice.options[displayprice.selectedIndex].value;
+			document.querySelector("#colordisplay").textContent=ans;	
+		}
+		function selectdata1()
+		{
+			displayprice1=document.querySelector("#dropdown1")
+			ans=displayprice1.options[displayprice1.selectedIndex].value;
+			document.querySelector("#colordisplay1").textContent=ans;	
+		}
+		function selectdata2()
+		{
+			displayprice2=document.querySelector("#dropdown2")
+			ans=displayprice2.options[displayprice2.selectedIndex].value;
+			document.querySelector("#colordisplay2").textContent=ans;	
+		}
+		function selectdata3()
+		{
+			displayprice3=document.querySelector("#dropdown3")
+			ans=displayprice3.options[displayprice3.selectedIndex].value;
+			document.querySelector("#colordisplay3").textContent=ans;	
+		}
+		function resettabledata()
+		{
+			location.reload();
+		}
+	</script>
+
 </head>
 {% include 'Tech/navbar.html' %}
 
@@ -33,12 +65,62 @@
 	<body>
 	
 <h2>Compare CPU:</h2>
+
+<hr/>
+<h3>Compare Prices:</h3>
 <table>
-	
-	
-	
+	<select id="dropdown">
+		<option disabled="true" selected>--Select Processor 1--</option>
+		{%for i in cpu%}
+		<option value= "{{i.price}}">{{i.model}}</option>
+		{%endfor%}
+</select>	
+<input type="submit" value="Click" onclick="selectdata();"/>
+<b style="color:black;" id="colordisplay"></b>
+<input type="button" value="Reset Table" onclick="resettabledata();"/>
 </table>
 <br></br>
-<h3>Compare</h3>
+<table>
+	<select id="dropdown1">
+		<option disabled="true" selected>--Select Processor 2--</option>
+		{%for m in cpu%}
+		<option value= "{{m.price}}">{{m.model}}</option>
+		{%endfor%}
+	</select>	
+	<input type="submit" value="Click" onclick="selectdata1();"/>
+	<b style="color:black;" id="colordisplay1"></b>
+	<input type="button" value="Reset Table" onclick="resettabledata();"/>
+</table>
+<br></br>
+<h3>Compare Benchmarks:</h3>
+<table>
+	<select id="dropdown2">
+		<option disabled="true" selected>--Select Processor 1--</option>
+		{%for n in cpu%}
+		<option value= "{{n.benchmarkvalue}}">{{n.model}}</option>
+		{%endfor%}
+</select>	
+<input type="submit" value="Click" onclick="selectdata2();"/>
+<b style="color:black;" id="colordisplay2"></b>
+<input type="button" value="Reset Table" onclick="resettabledata();"/>
+</table>
+<br></br>
+<table>
+	<select id="dropdown3">
+		<option disabled="true" selected>--Select Processor 2--</option>
+		{%for o in cpu%}
+		<option value= "{{o.benchmarkvalue}}">{{o.model}}</option>
+		{%endfor%}
+	</select>	
+	<input type="submit" value="Click" onclick="selectdata3();"/>
+	<b style="color:black;" id="colordisplay3"></b>
+	<input type="button" value="Reset Table" onclick="resettabledata();"/>
+</table>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
 {% endblock %}
