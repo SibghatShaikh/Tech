@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2021 at 07:54 PM
+-- Generation Time: May 24, 2021 at 11:54 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -56,28 +56,6 @@ INSERT INTO `accessories` (`AccId`, `Model`, `Price`, `ShopName`, `ReviewLink`) 
 (9014, ' HAVIT H2028U USB 7.1 GAMING HEADSET (BLACK) ', 2200, 'StarTech', 'https://www.youtube.com/watch?v=fsEF-gR3tTk'),
 (9015, 'FANTECH HQ52S TONE PLUS RGB GAMING HEADPHONE', 1350, 'TechHub', ' https://www.youtube.com/watch?v=EQmMbB-OI38'),
 (9016, 'CORSAIR VOID RGB ELITE 7.1 SURROUND SOUND USB PREMIUM GAMING HEADSET (WHITE)', 7500, 'StarTech', 'https://www.youtube.com/watch?v=PxFUjLXo6xA');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `Fname` varchar(8) DEFAULT NULL,
-  `Lname` varchar(8) DEFAULT NULL,
-  `Admin_ID` int(8) NOT NULL,
-  `AdminPassword` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`Fname`, `Lname`, `Admin_ID`, `AdminPassword`) VALUES
-('Sibghat', 'Shaikh', 101, '123456'),
-('Sayed', 'Harun', 102, '123456'),
-('Newaz', 'Sharif', 103, '123456');
 
 -- --------------------------------------------------------
 
@@ -164,6 +142,15 @@ CREATE TABLE `auth_user` (
   `is_active` tinyint(1) NOT NULL,
   `date_joined` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `auth_user`
+--
+
+INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
+(1, 'pbkdf2_sha256$260000$ChmqfsuQ6pBdOnSzLEgN51$Cc1Pw9MTtdQJg9zcJEX/Om71g+cyv81y8RdhVAJaPM4=', '2021-05-24 21:37:24.471686', 1, 'Sibghat', '', '', 'sibghatrshaikh@gmail.com', 1, 1, '2021-05-24 21:36:32.472601'),
+(2, 'pbkdf2_sha256$260000$LSpfomqlfQeuRIOZLpRlsR$TtpDEjqmCTAC45q5Sy07Hvx1qGDFATK8d8VtF1FPHw4=', NULL, 1, 'Sayed', '', '', 'sayed.harun@northsouth.edu', 1, 1, '2021-05-24 21:48:07.000000'),
+(3, 'pbkdf2_sha256$260000$FdSX4AenKeoKm0Ad2ernAF$xnU6KcUxU43OsTFuoN+NcFDxWW0hPsuHo7U62gEFuNE=', NULL, 1, 'Newaz', '', '', 'mohammad.newaz@northsouth.edu', 1, 1, '2021-05-24 21:49:26.000000');
 
 -- --------------------------------------------------------
 
@@ -296,6 +283,18 @@ CREATE TABLE `django_admin_log` (
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `django_admin_log`
+--
+
+INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
+(1, '2021-05-24 21:45:22.517604', '5017', 'Psu object (5017)', 1, '[{\"added\": {}}]', 9, 1),
+(2, '2021-05-24 21:46:03.107003', '5017', 'Psu object (5017)', 3, '', 9, 1),
+(3, '2021-05-24 21:48:07.593690', '2', 'Sayed', 1, '[{\"added\": {}}]', 4, 1),
+(4, '2021-05-24 21:49:27.095379', '3', 'Newaz', 1, '[{\"added\": {}}]', 4, 1),
+(5, '2021-05-24 21:50:03.676620', '3', 'Newaz', 2, '[{\"changed\": {\"fields\": [\"Email address\", \"Staff status\", \"Superuser status\"]}}]', 4, 1),
+(6, '2021-05-24 21:50:44.465839', '2', 'Sayed', 2, '[{\"changed\": {\"fields\": [\"Email address\", \"Staff status\", \"Superuser status\"]}}]', 4, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -318,7 +317,10 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 (2, 'auth', 'permission'),
 (4, 'auth', 'user'),
 (5, 'contenttypes', 'contenttype'),
-(6, 'sessions', 'session');
+(6, 'sessions', 'session'),
+(7, 'Tech', 'accessories'),
+(8, 'Tech', 'gpu'),
+(9, 'Tech', 'psu');
 
 -- --------------------------------------------------------
 
@@ -368,6 +370,13 @@ CREATE TABLE `django_session` (
   `session_data` longtext NOT NULL,
   `expire_date` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `django_session`
+--
+
+INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
+('p6l3m4z19mr5jxdlbm5emwmizmz32xrk', '.eJxVjEEOwiAQRe_C2hCYlgFcuvcMZOgMUjVtUtqV8e7apAvd_vfef6lE21rT1mRJI6uzsur0u2UaHjLtgO803WY9zNO6jFnvij5o09eZ5Xk53L-DSq1-6z4GE72UyMaV6JhhAITsCAoTMheLPXski0hdsJkxgA8C4gyIdE69P-c-N-Q:1llITy:medI9aHnrJe9OOKW-8cziwaRxDlG41WZAskCgEMu0uo', '2021-06-07 21:51:30.485780');
 
 -- --------------------------------------------------------
 
@@ -811,7 +820,7 @@ ALTER TABLE `auth_permission`
 -- AUTO_INCREMENT for table `auth_user`
 --
 ALTER TABLE `auth_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `auth_user_groups`
@@ -829,13 +838,13 @@ ALTER TABLE `auth_user_user_permissions`
 -- AUTO_INCREMENT for table `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `django_content_type`
 --
 ALTER TABLE `django_content_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `django_migrations`
