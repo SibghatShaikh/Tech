@@ -1,7 +1,7 @@
 //Tech_Hub cse311 final project
 //How to Run:
 
-//First make sure you have python, django, pymysql installed under your project virtual environment
+//First make sure you have python, django, pymysql installed under your project virtual environment and import the techhub.sql file to phpmyadmin
 
 Create project called Tech_Hub 
 example: 
