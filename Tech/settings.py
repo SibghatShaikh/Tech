@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Tech',
-    'hitcount',
+
 ]
 
 SESSION_SAVE_EVERY_REQUEST = True
